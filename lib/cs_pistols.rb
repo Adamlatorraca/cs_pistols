@@ -1,4 +1,7 @@
-require "cs_pistols/version"
+require_relative "./cs_pistols/version"
+require_relative "./cs_pistols/cli"
+require_relative "./cs_pistols/scraper"
+require_relative "./cs_pistols/weapon"
 
 module CsPistols
   class Error < StandardError; end
