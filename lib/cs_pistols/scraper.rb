@@ -10,9 +10,10 @@ class CsPistols::Scraper
         weapons = doc.css("#mw-content-text > div > div.tabs-static.tabs-portal > div > div > div:nth-child(4) > div:nth-child(1) > ul > li")
         weapons.each do |w|
             name = w.text
-            url = w.css("span > a").attr("href")
+            url = w.css("span > a").attr("href").text
             CsPistols::Weapon.new(name, url)
         end
+        binding.pry
     end
 
     def self.scrape_weapon_info(weapon)
