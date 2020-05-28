@@ -13,7 +13,6 @@ class CsPistols::Scraper
             url = w.css("span > a").attr("href").text
             CsPistols::Weapon.new(name, url)
         end
-        binding.pry
     end
 
     def self.scrape_weapon_info(weapon)
