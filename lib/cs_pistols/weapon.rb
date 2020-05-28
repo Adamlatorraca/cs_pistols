@@ -1,21 +1,23 @@
 class CsPistols::Weapon
-    attr_accessor :name, :link, :weapon_info
+    attr_accessor :name, :url, :weapon_info
 
     @@all = []
 
-    def initialize(name, link)
+    def initialize(name, url)
         @name = name
-        @link = link
+        @url = url
         @weapon_info = []
-        save
-    end
-
-    def self.get_weapons
-        CsPistols::Scraper.scrape_weapon_names
+        @@all << self
     end
     
     def self.all
+        CsPistols::Scraper.scrape_weapons if @@all.empty?
         @@all
+    end
+
+
+    def get_weapon_info
+        CsPistols::Scraper.scrape_weapon_info(self) if @weapon_info.empty?
     end
 
     def save
