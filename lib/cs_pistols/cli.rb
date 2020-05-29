@@ -7,8 +7,7 @@ class CsPistols::CLI
         get_pistols
         list_pistols       
         get_user_pistol
-#        get_pistol_info
-#        show_info_for
+        show_info_for
         goodbye
     end
 
@@ -17,7 +16,7 @@ class CsPistols::CLI
     end
 
     def list_pistols
-        puts "Choose a pistol!"
+        puts "Here are all of the pistols!"
         @weapons.each.with_index(1) do |weapon, index|
             puts "#{index}. #{weapon.name}"
         end
@@ -26,26 +25,27 @@ class CsPistols::CLI
     def get_user_pistol
         chosen_pistol = gets.strip.to_i
         show_info_for(chosen_pistol) if valid_input(chosen_pistol, @weapons)
-        get_pistol_info(chosen_weapon)
+      end
+
+    def valid_input(chosen_pistol, data)
+        chosen_pistol.to_i <= data.length && chosen_pistol.to_i > 0
     end
 
-    def valid_input(input, data)
-        input.to_i <= data.length && input.to_i > 0
-    end
-
-=begin    def show_info_for(weapon)
-       puts weapon.name
-       weapon.key_info.each do |info|
-        puts "- #{i}"
-       end
-    end
-
-    def get_pistol_info(chosen_pistol)
+    def show_info_for(chosen_pistol)
         weapon = @weapons[chosen_pistol - 1]
         weapon.get_weapon_info
-        show_info_for(weapon)
+        puts weapon.name
+        weapon.weapon_info.each do |info|
+         puts "- #{i}"
+        end
+     end
+
+    def get_weapon_info(weapon)
+        puts weapon.name
+        weapon.weapon_info.each {|i| puts "- #{i}"}
     end
-=end
+
+
     def goodbye
         puts "Thanks for using my reference tool!"
     end

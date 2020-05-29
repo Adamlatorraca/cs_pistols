@@ -16,6 +16,12 @@ class CsPistols::Scraper
     end
 
     def self.scrape_weapon_info(weapon)
-
+        url = "https://liquipedia.net/counterstrike#{weapon.url}"
+        doc = Nokogiri::HTML(open(url))
+        divs = doc.css("#mw-content-text > div > div:nth-child(3) > div.fo-nttax-infobox-wrapper.infobox-csgo > div.fo-nttax-infobox.wiki-bordercolor-light")
+        divs.each do |div|
+            info = div.text.strip
+            weapon.weapon_info << info
+        end
     end
 end
