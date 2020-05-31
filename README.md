@@ -1,8 +1,6 @@
 # CsPistols
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cs_pistols`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-Remember to: Delete this and the text above, and describe your gem
+Welcome to my CLI data gem! This gem scrapes data for the various pistols in the video game Counter-Strike: Global Offensive and returns detailed information about the weapon's statistics. This is a great utility for newer players to the game who may need longer than the game's 15 second timer to be able to make an informed decision about what they should purchase.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Remember to: Write usage instructions here
+To use: Run the cs_pistols file (bin/cs_pistols). You will be given a list of the game's pistol weapons. Select the number next to the pistol to be given the detailed information about the weapon. After getting the information you will be prompted to either re-run the program or end with a Y/N prompt. Enjoy!
 
 ## Development
 
@@ -32,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/<github username>/cs_pistols. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/<github username>/cs_pistols/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/Adamlatorraca/cs_pistols. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Adamlatorraca/cs_pistols/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -41,4 +39,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the CsPistols project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/<github username>/cs_pistols/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the CsPistols project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Adamlatorraca/cs_pistols/blob/master/CODE_OF_CONDUCT.md).

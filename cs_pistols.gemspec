@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Adamlatorraca"]
   spec.email         = ["adam.latorraca@gmail.com"]
 
-  spec.summary       = %q{Remember to: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{Remember to: Write a longer description or delete this line.}
+  spec.summary       = %q{"A quire reference guide for CS:GO Pistols"}
+  spec.description   = %q{"Choosing a weapon gives the user detailed statistics about each pistol in the video game CS:GO"}
   spec.homepage      = "http://replacesite.com"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
