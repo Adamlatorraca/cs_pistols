@@ -1,5 +1,3 @@
-require "pry"
-
 class CsPistols::CLI
     def call
         puts "Welcome to Adam's CS:GO Pistols Reference!"

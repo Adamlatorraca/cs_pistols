@@ -2,4 +2,5 @@
 
 require_relative "../lib/cs_pistols"
 
+
 CsPistols::CLI.new.call

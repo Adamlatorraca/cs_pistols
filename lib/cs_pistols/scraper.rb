@@ -1,7 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
-require 'pry'
-
 class CsPistols::Scraper
 
    def self.scrape_weapons
