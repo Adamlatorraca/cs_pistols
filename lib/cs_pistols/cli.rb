@@ -35,11 +35,11 @@ class CsPistols::CLI
     end
 
     def valid_input?(input)
-        input.to_i.between?(1,8)
+        input.to_i >= 1 && input.to_i <= CsPistols::Weapon.all.length
     end
 
     def get_weapon_info(weapon)
-        CsPistols::Scraper.scrape_weapon_page(weapon)
+        CsPistols::Scraper.scrape_weapon_page(weapon) if weapon.price == nil
     end
 
     def print_weapon(weapon)

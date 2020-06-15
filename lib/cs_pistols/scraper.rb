@@ -14,6 +14,7 @@ class CsPistols::Scraper
     end
 
     def self.scrape_weapon_page(weapon)
+        puts "****scraping****"
         site = ("https://liquipedia.net#{weapon.url}")
         doc = Nokogiri::HTML(open(site))
         weapon.price = doc.css("#mw-content-text > div > div:nth-child(3) > div.fo-nttax-infobox-wrapper.infobox-csgo > div.fo-nttax-infobox.wiki-bordercolor-light > div:nth-child(5) > div:nth-child(2)").text

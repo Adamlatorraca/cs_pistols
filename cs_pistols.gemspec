@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Adamlatorraca"]
   spec.email         = ["adam.latorraca@gmail.com"]
 
-  spec.summary       = %q{"A quire reference guide for CS:GO Pistols"}
+  spec.summary       = %q{"A reference guide for CS:GO Pistols"}
   spec.description   = %q{"Choosing a weapon gives the user detailed statistics about each pistol in the video game CS:GO"}
   spec.homepage      = "http://replacesite.com"
   spec.license       = "MIT"

@@ -12,9 +12,4 @@ class CsPistols::Weapon
     def self.all
         @@all
     end
-
-    def save
-        @@all << self
-        self
-    end
 end
